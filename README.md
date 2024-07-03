@@ -16,7 +16,7 @@
 - LFSRs are initialised with zeros.
 - The secret key is fed bit by bit ignoring the majority logic.
 - After 64 bit secret key, the known 22bit public key is fed(bit by bit) ignoring the majority logic.
-- Next LFSRs are clocked 100 times using the Majprity Logic and the outputs are ignored.
+- Next LFSRs are clocked 100 times using the Majority Logic and the outputs are ignored.
 - Finally the generation of pseudo random keystream started.The LFSRs are clocked using Majority Logic and the LSB bits of three LFSRs are XORed to get single bit key.
 - These pseudo keys are stored in a register bit by bit and then XORed with the input bits(from binary file) to get the encrypted bits.
 - These encrypted bits are then converted to hex file and finally to jpg file.
